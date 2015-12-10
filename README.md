@@ -34,4 +34,4 @@ timestamp.py - За да установим най-бавния сет от за
 Пример: app_deploy_edge_static | Create sha1 folder] 0:01:21.990 
 Ролята app_deploy_edge_static | Create sha1 folder] се е изпълнил в 0:01:21.990 от пускането на playbook-a.
 
-С Callback plugin-a продължаваме да подобряваме деплой процеса. Установихме например, че най-бавни са задачите за стартирането на приложенията и така оптимизирахме  някои от тях, което доведе до успешно завършване на оригинално поставената задача ‘near zero downtime deploy’Ansible is a free software platform for configuring and managing computers.
+С Callback plugin-a продължаваме да подобряваме деплой процеса. Установихме например, че най-бавни са задачите за стартирането на приложенията и така оптимизирахме  някои от тях, което доведе до успешно завършване на оригинално поставената задача ‘near zero downtime deploy’.
