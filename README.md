@@ -20,8 +20,7 @@ log_plays.py consists of:
 > 	Wednesday 09 December 2015  11:51:53 +0200 (0:00:00.013)       0:00:03.712 **** 
 > 	ok: [127.0.0.1]
 
-
-   * plugin that sends email with archived log file for the tasks with exception
+  * plugin that sends email with archived log file for the tasks with exception
 
 > Example(email subject): Unreachable: SSH Error: data could not be sent to the remote host. Make sure this host can be reached over ssh
 		
