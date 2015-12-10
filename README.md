@@ -13,7 +13,7 @@ Ansible supports implementation of additional plugins, including such written on
 Our solution consists of the following three (python), plugins applicable for each Ansible playbook:
 * log_plays.py is a custom logging module that helps debugging. Gathered logs direct us for the root cause of the problem - missing configuration, issues with the environment or else.
 log_plays.py consists of:
-  * plugin that log details for each task
+    * plugin that sends email with archived log file for the tasks with exception
 
 >  Example:
 >  ASK: [local_preparation_cotainer_jetty | Verifying that base jetty zip file exists ] *** 
