@@ -5,7 +5,6 @@ How to decide on which task among all we should optimize?
 We found the answer implementing a callback function in our Ansible Deployment tool.
 
 ### What is a callback function?
-
 Callback function implements additional to standard behaviour of the tasks in a playbook
 For example: send email on exception during task execution OR add timestamp for each task log
 
@@ -21,7 +20,7 @@ log_plays.py consists of:
 > 	Wednesday 09 December 2015  11:51:53 +0200 (0:00:00.013)       0:00:03.712 **** 
 > 	ok: [127.0.0.1]
 
-  * plugin that sends email with archived log file for the tasks with exception
+   * plugin that sends email with archived log file for the tasks with exception
 
 > Example(email subject): Unreachable: SSH Error: data could not be sent to the remote host. Make sure this host can be reached over ssh
 		
@@ -30,6 +29,7 @@ log_plays.py consists of:
   * and the 100 slowest task in the archived log file
   
 >  Example: local_preparation_configuration | Populate template ------------------- 23.37s
+
 * timestamp.py determine the slowest set of tasks (roles) during deploy. It records the moment from the whole deploy that the role is executed
 
 > Example: app_deploy_edge_static | Create sha1 folder] 0:01:21.990 
