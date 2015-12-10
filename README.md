@@ -1,7 +1,8 @@
 # Callback plugin in Ansible deployment tool
 ### Our goal - ‘near zero downtime deploy’
+
 But how to achieve ‘near zero downtime deploy’ if we have no idea about the execution time of the tasks.
-How to decide on which task among all we should optimize? 
+How to decide on which task among all we should optimize,  when Ansible provides only basic information for what os going on in the respective modules.
 We found the answer implementing a callback function in our Ansible Deployment tool.
 
 ### What is a callback function?
@@ -9,7 +10,7 @@ Callback function implements additional to standard behaviour of the tasks in a 
 For example: send email on exception during task execution OR add timestamp for each task log
 
 ### Our solution 
-Ansible supports implementation of additional plugins, including such written on Python.   
+
 Our solution consists of the following three (python), plugins applicable for each Ansible playbook:
 * log_plays.py is a custom logging module that helps debugging. Gathered logs direct us for the root cause of the problem - missing configuration, issues with the environment or else.
 log_plays.py consists of: 
